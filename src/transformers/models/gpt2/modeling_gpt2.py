@@ -30,7 +30,7 @@ from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
 print("Second set of imports done") 
 
 print("starting ACT2FN import") 
-from transformers.activations_tf import ACT2FN
+from transformers.activations import ACT2FN
 print("transformers.activations_tf import ACT2FN") 
 
 from ...generation import GenerationMixin
