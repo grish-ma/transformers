@@ -34,7 +34,6 @@ from transformers.activations import ACT2FN
 print("transformers.activations import ACT2FN") 
 from transformers.generation import GenerationMixin
 from transformers.modeling_attn_mask_utils import _prepare_4d_attention_mask_for_sdpa, _prepare_4d_causal_attention_mask_for_sdpa
-print("transformers.modeling_attn_mask_utils") 
 from transformers.modeling_outputs import (
     BaseModelOutputWithPastAndCrossAttentions,
     CausalLMOutputWithCrossAttentions,
@@ -58,7 +57,8 @@ from transformers.utils import (
 )
 from transformers.utils.model_parallel_utils import assert_device_map, get_device_map
 from .configuration_gpt2 import GPT2Config
-
+print("is_flash_attn_2_available") 
+print(is_flash_attn_2_available())
 
 if is_flash_attn_2_available():
     from transformers.modeling_flash_attention_utils import _flash_attention_forward
