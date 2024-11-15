@@ -44,6 +44,8 @@ from transformers.modeling_outputs import (
 print("transformers.modeling_outputs")
 from transformers.modeling_utils import PreTrainedModel, SequenceSummary
 from transformers.pytorch_utils import Conv1D, find_pruneable_heads_and_indices, prune_conv1d_layer
+
+print("BEFORE transformers.utils import()")
 from transformers.utils import (
     ModelOutput,
     add_code_sample_docstrings,
@@ -55,7 +57,7 @@ from transformers.utils import (
     logging,
     replace_return_docstrings,
 )
-print("transformers.utils import {}")
+print("AFTER transformers.utils import()")
 from transformers.utils.model_parallel_utils import assert_device_map, get_device_map
 from .configuration_gpt2 import GPT2Config
 print("is_flash_attn_2_available") 
