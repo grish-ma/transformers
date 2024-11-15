@@ -32,9 +32,7 @@ print("Second set of imports done")
 print("starting ACT2FN import") 
 from transformers.activations import ACT2FN
 print("transformers.activations import ACT2FN") 
-
 from transformers.generation import GenerationMixin
-print("transformers.generation") 
 from transformers.modeling_attn_mask_utils import _prepare_4d_attention_mask_for_sdpa, _prepare_4d_causal_attention_mask_for_sdpa
 print("transformers.modeling_attn_mask_utils") 
 from transformers.modeling_outputs import (
@@ -44,6 +42,7 @@ from transformers.modeling_outputs import (
     SequenceClassifierOutputWithPast,
     TokenClassifierOutput,
 )
+print("transformers.modeling_outputs")
 from transformers.modeling_utils import PreTrainedModel, SequenceSummary
 from transformers.pytorch_utils import Conv1D, find_pruneable_heads_and_indices, prune_conv1d_layer
 from transformers.utils import (
@@ -70,7 +69,7 @@ logger = logging.get_logger(__name__)
 _CHECKPOINT_FOR_DOC = "openai-community/gpt2"
 _CONFIG_FOR_DOC = "GPT2Config"
 
-
+print("Initial imports done.")
 def load_tf_weights_in_gpt2(model, config, gpt2_checkpoint_path):
     """Load tf checkpoints in a pytorch model"""
     try:
