@@ -31,10 +31,12 @@ print("Second set of imports done")
 
 print("starting ACT2FN import") 
 from transformers.activations import ACT2FN
-print("transformers.activations_tf import ACT2FN") 
+print("transformers.activations import ACT2FN") 
 
 from transformers.generation import GenerationMixin
+print("transformers.generation") 
 from transformers.modeling_attn_mask_utils import _prepare_4d_attention_mask_for_sdpa, _prepare_4d_causal_attention_mask_for_sdpa
+print("transformers.modeling_attn_mask_utils") 
 from transformers.modeling_outputs import (
     BaseModelOutputWithPastAndCrossAttentions,
     CausalLMOutputWithCrossAttentions,
