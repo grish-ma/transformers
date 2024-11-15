@@ -42,8 +42,10 @@ from transformers.modeling_outputs import (
     TokenClassifierOutput,
 )
 print("transformers.modeling_outputs")
-from transformers.modeling_utils import PreTrainedModel, SequenceSummary
-print("MODELING_utils")
+from transformers.modeling_utils import PreTrainedModel
+print("MODELING_utils: PreTrainedModel")
+from transformers.modeling_utils import SequenceSummary
+print("MODELING_utils: SequenceSummary")
 from transformers.pytorch_utils import Conv1D, find_pruneable_heads_and_indices, prune_conv1d_layer
 print("PYTORCH.utils")
 
