@@ -13,8 +13,10 @@
 # limitations under the License.
 
 import math
+print("activations_tf: math imported")
 
 import tensorflow as tf
+print("activations_tf: tensorflow imported")
 from packaging.version import parse
 
 
