@@ -20,14 +20,18 @@ import os
 import warnings
 from dataclasses import dataclass
 from typing import Optional, Tuple, Union
+print("First set of imports done") 
 
 import torch
 import torch.utils.checkpoint
 from packaging import version
 from torch import nn
 from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
+print("Second set of imports done") 
 
 from transformers.activations_tf import ACT2FN
+print("transformers.activations_tf import ACT2FN") 
+
 from ...generation import GenerationMixin
 from ...modeling_attn_mask_utils import _prepare_4d_attention_mask_for_sdpa, _prepare_4d_causal_attention_mask_for_sdpa
 from ...modeling_outputs import (
